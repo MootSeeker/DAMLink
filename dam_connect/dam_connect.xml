@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Entwicklung\PCB\DAMLink\dam_connect\dam_connect\dam_connect.kicad_sch</source>
+    <date>2024-06-16T10:54:01+0200</date>
+    <tool>Eeschema 8.0.3</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>DAM Connect</title>
+        <company/>
+        <rev>a</rev>
+        <date>2024-06-15</date>
+        <source>dam_connect.kicad_sch</source>
+        <comment number="1" value="MootSeeker 2024"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>Conn_ARM_JTAG_SWD_20</value>
+      <footprint>Connector_IDC:IDC-Header_2x10_P2.54mm_Horizontal</footprint>
+      <datasheet>http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf</datasheet>
+      <description>Standard IDC20 Pinheader Connector, ARM legacy JTAG and SWD interface</description>
+      <fields>
+        <field name="Footprint">Connector_IDC:IDC-Header_2x10_P2.54mm_Horizontal</field>
+        <field name="Datasheet">http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf</field>
+        <field name="Description">Standard IDC20 Pinheader Connector, ARM legacy JTAG and SWD interface</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_ARM_JTAG_SWD_20" description="Standard IDC20 Pinheader Connector, ARM legacy JTAG and SWD interface"/>
+      <property name="Sheetname" value="Stammblatt"/>
+      <property name="Sheetfile" value="dam_connect.kicad_sch"/>
+      <property name="ki_keywords" value="IDC20 Pinheader Pins Connector ARM JTAG SWD"/>
+      <property name="ki_fp_filters" value="IDC*Header*P2.54mm* PinHeader*2x10*P2.54mm*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6fe36be8-deba-4044-bd98-91ca6f756341</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_ARM_JTAG_SWD_10</value>
+      <footprint>Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal</footprint>
+      <datasheet>http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</datasheet>
+      <description>Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface</description>
+      <fields>
+        <field name="Footprint">Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal</field>
+        <field name="Datasheet">http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</field>
+        <field name="Description">Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_ARM_JTAG_SWD_10" description="Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface"/>
+      <property name="Sheetname" value="Stammblatt"/>
+      <property name="Sheetfile" value="dam_connect.kicad_sch"/>
+      <property name="ki_keywords" value="Cortex Debug Connector ARM SWD JTAG"/>
+      <property name="ki_fp_filters" value="PinHeader?2x05?P1.27mm*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fd5f7a0a-d8c0-47b8-9038-1b4cf203eb92</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_ARM_JTAG_SWD_10">
+      <description>Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface</description>
+      <docs>http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</docs>
+      <footprints>
+        <fp>PinHeader?2x05?P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J2</field>
+        <field name="Value">Conn_ARM_JTAG_SWD_10</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</field>
+        <field name="Description">Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VTref" type="power_in"/>
+        <pin num="2" name="SWDIO/TMS" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="SWCLK/TCK" type="output"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="SWO/TDO" type="input"/>
+        <pin num="7" name="NC/RCLK" type="passive"/>
+        <pin num="8" name="NC/TDI" type="output"/>
+        <pin num="9" name="GNDDetect" type="passive"/>
+        <pin num="10" name="~{RESET}" type="open_collector"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_ARM_JTAG_SWD_20">
+      <description>Standard IDC20 Pinheader Connector, ARM legacy JTAG and SWD interface</description>
+      <docs>http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf</docs>
+      <footprints>
+        <fp>IDC*Header*P2.54mm*</fp>
+        <fp>PinHeader*2x10*P2.54mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_ARM_JTAG_SWD_20</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf</field>
+        <field name="Description">Standard IDC20 Pinheader Connector, ARM legacy JTAG and SWD interface</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VTREF" type="power_in"/>
+        <pin num="2" name="VCC/NC" type="power_in"/>
+        <pin num="3" name="~{TRST}" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="TDI" type="output"/>
+        <pin num="6" name="GND" type="passive"/>
+        <pin num="7" name="TMS/SWDIO" type="output"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="TCK/SWCLK" type="output"/>
+        <pin num="10" name="GND" type="passive"/>
+        <pin num="11" name="RTCK" type="input"/>
+        <pin num="12" name="GND" type="passive"/>
+        <pin num="13" name="TDO/SWO" type="input"/>
+        <pin num="14" name="GND" type="passive"/>
+        <pin num="15" name="~{SRST}" type="bidirectional"/>
+        <pin num="16" name="GND" type="passive"/>
+        <pin num="17" name="DBGRQ/NC" type="output"/>
+        <pin num="18" name="GND" type="passive"/>
+        <pin num="19" name="DBGACK/NC" type="input"/>
+        <pin num="20" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="SolderJumper_3_Bridged12">
+      <description>3-pole Solder Jumper, pins 1+2 closed/bridged</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Bridged12*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_3_Bridged12</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">3-pole Solder Jumper, pins 1+2 closed/bridged</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="C" type="passive"/>
+        <pin num="3" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="Fiducial">
+      <description>Fiducial Marker</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Fiducial*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FID</field>
+        <field name="Value">Fiducial</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Fiducial Marker</field>
+      </fields>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\8.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>C:\Program Files\KiCad\8.0\share\kicad\symbols\/Jumper.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\8.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="J1" pin="19" pinfunction="DBGACK/NC" pintype="input"/>
+    </net>
+    <net code="2" name="/RTCLK">
+      <node ref="J1" pin="11" pinfunction="RTCK" pintype="input"/>
+      <node ref="J2" pin="7" pinfunction="NC/RCLK" pintype="passive"/>
+    </net>
+    <net code="3" name="/SWCLK">
+      <node ref="J1" pin="9" pinfunction="TCK/SWCLK" pintype="output"/>
+      <node ref="J2" pin="4" pinfunction="SWCLK/TCK" pintype="output"/>
+    </net>
+    <net code="4" name="/SWDIO">
+      <node ref="J1" pin="7" pinfunction="TMS/SWDIO" pintype="output"/>
+      <node ref="J2" pin="2" pinfunction="SWDIO/TMS" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/SWO">
+      <node ref="J1" pin="13" pinfunction="TDO/SWO" pintype="input"/>
+      <node ref="J2" pin="6" pinfunction="SWO/TDO" pintype="input"/>
+    </net>
+    <net code="6" name="/TDI">
+      <node ref="J1" pin="5" pinfunction="TDI" pintype="output"/>
+      <node ref="J2" pin="8" pinfunction="NC/TDI" pintype="output"/>
+    </net>
+    <net code="7" name="/~{RESET}">
+      <node ref="J1" pin="15" pinfunction="~{SRST}" pintype="bidirectional"/>
+      <node ref="J2" pin="10" pinfunction="~{RESET}" pintype="open_collector"/>
+    </net>
+    <net code="8" name="/~{nTRST}">
+      <node ref="J1" pin="3" pinfunction="~{TRST}" pintype="output"/>
+    </net>
+    <net code="9" name="GND">
+      <node ref="J1" pin="10" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="12" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="14" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="16" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="18" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="20" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="J1" pin="6" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="8" pinfunction="GND" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="10" name="Net-(J2-GNDDetect)">
+      <node ref="J2" pin="9" pinfunction="GNDDetect" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(JP1-C)">
+      <node ref="J2" pin="5" pinfunction="GND" pintype="passive"/>
+    </net>
+    <net code="12" name="VCC">
+      <node ref="J1" pin="1" pinfunction="VTREF" pintype="power_in"/>
+      <node ref="J2" pin="1" pinfunction="VTref" pintype="power_in"/>
+    </net>
+    <net code="13" name="unconnected-(J1-DBGRQ{slash}NC-Pad17)">
+      <node ref="J1" pin="17" pinfunction="DBGRQ/NC" pintype="output+no_connect"/>
+    </net>
+    <net code="14" name="unconnected-(J1-VCC{slash}NC-Pad2)">
+      <node ref="J1" pin="2" pinfunction="VCC/NC" pintype="power_in+no_connect"/>
+    </net>
+  </nets>
+</export>
