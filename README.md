@@ -1,6 +1,6 @@
 # Minnow - USB-C DAM Tool
 
-![./media/minnow-pcb.jpg](./media/minnow-pcb.jpg)
+![./media/minnow-pcb.jpg](./media/minnow-pcb.jpg) # NEW Image soon!
 
 Minnow is a tool for using DAM (Debug Accessory Mode), providing an interface to SWD or JTAG and/or UART from the device. It expands upon [this concept](https://github.com/BitterAndReal/SWD-over-USB-C) to include a USB-UART and some utility for use within test rigs. It could be considered SWD over DAM with a sprinkling of [USB cereal](https://github.com/oxda/usb-cereal) - unlike usb-cereal it does not use the Chromebook UART mapping in favour of maintaining USB-C rotational symmetry.
 
@@ -90,6 +90,7 @@ I personally use the 'ftconf.py' script as part of _pyftdi_ to provision new dev
 
 # Useful Links
 
+* [Minnow Project](https://github.com/tuna-f1sh/minnow)
 * [SWD over USB-C](https://github.com/BitterAndReal/SWD-over-USB-C)
 * [USB Type-C](https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf)
 * [ARM JTAG/SWD Interface](https://developer.arm.com/documentation/101636/0100/Debug-and-Trace/JTAG-SWD-Interface)
