@@ -18,14 +18,10 @@ DAMLink is a tool for using DAM (Debug Accessory Mode), providing an interface t
 
 # Status and Obtaining
 
-[The latest release](https://github.com/tuna-f1sh/minnow/releases/latest) is full tested and I have PCBAs for purchase:
-
-* [Purchase from his shop](https://shop.jbrengineering.co.uk/product/minnow-usb-c-debug-accessory-mode-tool-dam/).
-* [Purchase from Tindie](https://www.tindie.com/products/jbrengineering/minnow-usb-c-debug-accessory-mode-tool-dam/).
-* Since it's a development tool, it uses 0603 so can be easily assembled/modified by hand.
 
 # Usage
 
+### Add new image soon ###
 ![Minnow R2 connected to example DAM board](./media/minnow-dam-board.jpg)
 __Minnow connected to the USB DAM example test board - this would be integrated to a target in practice__
 
