@@ -2,12 +2,12 @@
 
 ![./media/minnow-pcb.jpg](./media/minnow-pcb.jpg) # NEW Image soon!
 
-Minnow is a tool for using DAM (Debug Accessory Mode), providing an interface to SWD or JTAG and/or UART from the device. It expands upon [this concept](https://github.com/BitterAndReal/SWD-over-USB-C) to include a USB-UART and some utility for use within test rigs. It could be considered SWD over DAM with a sprinkling of [USB cereal](https://github.com/oxda/usb-cereal) - unlike usb-cereal it does not use the Chromebook UART mapping in favour of maintaining USB-C rotational symmetry.
+DAMLink is a tool for using DAM (Debug Accessory Mode), providing an interface to SWD or JTAG and/or Serial interface from the device. It expands upon [this concept](https://github.com/BitterAndReal/SWD-over-USB-C) to include a USB-UART and some utility for use within test rigs. This fork bases on the Minnow project, with some improvments from my side and changes to fit into our application. Above all, the extension of the use of the DAM, in that a signal can be routed via all pins, e.g. SPI / I2C / USART, offers the advantage in the application that you have the possibility to develop and debug USB accessories by connecting a logic analyzer. 
 
 * Enables and interfaces USB DAM configured in image below; Full SWD or JTAG over USB-C.
-* Provides board designer the option of using RX+ for NRST/RXD and RX- for SWO/TXD - either single-wire trace communication (RTT) or UART.
+* Provides board designer the option of using RX+ for NRST/RXD,  RX- for SWO/TXD, TX+ - for SWDIO/IO0 and TX- - for SWCLK/IO1 - for full SWD debugging or Serial interface analysis.
 * Four configurable GPIO on FT230 for test rig control of UUT: power enable; RX pin control; reset.
-* TagConnect TC2030 and ARM 10-pin header to debugger.
+* TagConnect TC2050 and STDC14 header to debugger (ST-Link V3, Segger J-Link or equal).
 * USB pass-through or FT230 USB UART to device.
 * VTARGET reference from device or external.
 * Maintains USB-C rotational symmetry.
